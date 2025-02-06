@@ -22,13 +22,13 @@ def init():
 
     # if not os.path.exists(COLUMN_MAPPING_CSV):
     if not check_df_exists(COLUMN_MAPPING_CSV):
-        st.toast("Loading default column mapping")
-        st.toast("os.path.exists(COLUMN_MAPPING_CSV): " + str(os.path.exists(COLUMN_MAPPING_CSV)))
+        print("Loading default column mapping")
+        print("os.path.exists(COLUMN_MAPPING_CSV): " + str(os.path.exists(COLUMN_MAPPING_CSV)))
         shutil.copy(DEFAULT_COLUMN_MAPPING_CSV, COLUMN_MAPPING_CSV)
     # if not os.path.exists(CATEGORY_MAPPING_CSV):
     if not check_df_exists(CATEGORY_MAPPING_CSV):
-        st.toast("Loading default category mapping")
-        st.toast("os.path.exists(COLUMN_MAPPING_CSV): " + str(os.path.exists(COLUMN_MAPPING_CSV)))
+        print("Loading default category mapping")
+        print("os.path.exists(COLUMN_MAPPING_CSV): " + str(os.path.exists(COLUMN_MAPPING_CSV)))
         shutil.copy(DEFAULT_CATEGORY_MAPPING_CSV, CATEGORY_MAPPING_CSV)
     if not os.path.exists(RAW_DATA_PATH):
         os.makedirs(RAW_DATA_PATH)
@@ -42,7 +42,7 @@ def check_df_exists(path):
     try:
         df = pd.read_csv(path, delimiter=";")
     except Exception as e:
-        st.toast("Error reading file: " + str(e))
+        print("Error reading file: " + str(e))
         return False
     return not df.empty
     

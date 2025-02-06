@@ -23,7 +23,7 @@
     },
     "stlite": {
       "desktop": {
-        "files": ["Home.py", "pages/*.py", "utils/*.py", "utils/*.csv", "data/*.csv"],
+        "files": ["Home.py", "pages/*.py", "utils/*.py", "utils/*.csv", "data/*"],
         "entrypoint": "Home.py",
         "dependencies": ["pandas", "matplotlib", "numpy", "plotly"],
         "embed": true,

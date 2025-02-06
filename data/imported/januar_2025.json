@@ -1,0 +1,10 @@
+{
+    "name": "januar_2025",
+    "output_path": "/mnt/data/imported/januar_2025",
+    "input_files": [
+        "/mnt/data/raw/januar_2025_bank_transaction.csv"
+    ],
+    "import_date": "2025-02-06 19:47:42",
+    "timerange": "01.12.2024 - 29.12.2024",
+    "n_entries": 32
+}

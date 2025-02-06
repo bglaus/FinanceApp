@@ -37,6 +37,6 @@ COLUMN_CONFIG = {
 }
 
 # Data Storage Settings
-RAW_DATA_PATH = BASE_PATH + 'data/raw/'                             # path to store the raw data (CSV files as they are uploaded)
-IMPORTED_DATA_PATH = BASE_PATH + 'data/imported/'                   # path to store the imported data (CSV files after import-processing)
-YEARLY_DATA_PATH = BASE_PATH + 'data/imported/yearly/'              # path to store the yearly data (CSV files after yearly processing)
+RAW_DATA_PATH = BASE_PATH + '/data/raw/'                             # path to store the raw data (CSV files as they are uploaded)
+IMPORTED_DATA_PATH = BASE_PATH + '/data/imported/'                   # path to store the imported data (CSV files after import-processing)
+YEARLY_DATA_PATH = BASE_PATH + '/data/imported/yearly/'              # path to store the yearly data (CSV files after yearly processing)
